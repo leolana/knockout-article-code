@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lists</title>
+    <script type="text/javascript" src="../lib/knockout-3.2.0.js"></script>
+  </head>
+  <body>
+    <h3>This is a list with no initial values</h3>
+    <div data-bind="component: 'list-builder'"></div>
+          
+    <h3>This is a list with some initial values</h3>
+    <div data-bind="component: {
+      name: 'list-builder',
+      params: { list: ['item', 'another item'] }
+    }"></div>
+  </body>
+
+  <script type="text/javascript" src="lists.js"></script>
+</html>

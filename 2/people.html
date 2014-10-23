@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>People</title>
+    <script type="text/javascript" src="../lib/knockout-3.2.0.js"></script>
+  </head>
+  <body>
+    <ul data-bind="foreach: people">
+      <li data-bind="click: $parent.selectPerson, text: name"></li>
+    </ul>
+    
+    <!-- ko if: selectedPerson -->
+      <span data-bind="text: selectedPerson().name"></span>
+    <!-- /ko -->
+  </body>
+
+  <script type="text/javascript" src="people.js"></script>
+</html>

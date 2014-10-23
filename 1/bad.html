@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Bad App</title>
+    <script type="text/javascript" src="../lib/knockout-3.2.0.js"></script>
+  </head>
+  <body>
+    <span data-bind="text: message"></span>
+      <script type="text/javascript">
+        function ViewModel() {
+          this.message = ko.observable("This is bad!");
+        }
+
+        ko.applyBindings(new ViewModel());
+      </script>
+  </body>
+</html>

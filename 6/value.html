@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>value Binding</title>
+    <script type="text/javascript" src="../lib/knockout-3.2.0.js"></script>
+  </head>
+  <body>
+  <h3>valueUpdate: undefined</h3>
+  <input type="text" data-bind="value: myValue">
+  Value: <span data-bind="text: myValue"></span>
+
+  <h3>valueUpdate: input</h3>
+  <input type="text" data-bind="value: inputValue, valueUpdate: 'input'">
+  Value: <span data-bind="text: inputValue"></span>
+
+  <h3>valueUpdate: keyup</h3>
+  <input type="text" data-bind="value: keyUpValue, valueUpdate: 'keyup'">
+  Value: <span data-bind="text: keyUpValue"></span>
+
+  <h3>valueUpdate: keyup</h3>
+  <input type="text" data-bind="value: keyPressValue, valueUpdate: 'keypress'">
+  Value: <span data-bind="text: keyPressValue"></span>
+
+  <h3>valueUpdate: afterkeydown</h3>
+  <input type="text" data-bind="value: afterKeyDownValue, valueUpdate: 'afterkeydown'">
+  Value: <span data-bind="text: afterKeyDownValue"></span>
+
+  <script type="text/javascript" src="value.js"></script>
+</html>
